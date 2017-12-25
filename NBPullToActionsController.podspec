@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NBPullToActionsController'
-  s.version          = '0.0.4'
+  s.version          = '0.0.5'
   s.summary          = 'a CocoaPods fork of NBPullToActionsController'
 
   s.homepage         = 'https://github.com/sunpaq/NBPullToActionsController'
@@ -25,4 +25,11 @@ Pod::Spec.new do |s|
   s.dependency 'Masonry', '0.6.3'
   s.dependency 'THObserversAndBinders'
   s.dependency 'ALActionBlocks', '1.0.3'
+
+  def s.post_install(target)
+    target.build_configurations.each do |config|
+      config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
+      config.build_settings['ENABLE_STRICT_OBJC_MSGSEND'] = "NO"
+    end
+  end
 end
