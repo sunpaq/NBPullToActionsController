@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NBPullToActionsController'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'a CocoaPods fork of NBPullToActionsController'
 
   s.homepage         = 'https://github.com/sunpaq/NBPullToActionsController'
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   #s.private_header_files = ''
 
   #s.frameworks = 'Foundation', 'AVFoundation', 'UIKit', 'AssetsLibrary', 'CoreMedia'
-  s.dependency 'Masonry'
-  s.dependency 'THObserversAndBinders'
-  s.dependency 'ALActionBlocks'
+  s.dependency 'Masonry', '0.6.3'
+  s.dependency 'THObserversAndBinders', '1.0.0'
+  s.dependency 'ALActionBlocks', '1.0.3'
 end
