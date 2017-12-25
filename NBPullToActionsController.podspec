@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NBPullToActionsController'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'a CocoaPods fork of NBPullToActionsController'
 
   s.homepage         = 'https://github.com/sunpaq/NBPullToActionsController'
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.author           = { 'sunpaq' => 'sunpaq@gmail.com' }
   s.source           = { :git => 'https://github.com/sunpaq/NBPullToActionsController.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '7.0'
   s.source_files  = "NBPullToActionsController", "NBPullToActionsController/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
   #s.private_header_files = ''
